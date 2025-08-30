@@ -1,0 +1,139 @@
+.menu-bottom {
+  margin-bottom: 16px;
+  margin-left: 16px;
+
+  @include on-tablet {
+    display: grid;
+  }
+
+  &__user {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 16px;
+
+    & :first-child {
+      cursor: pointer;
+    }
+
+    &-info {
+      font-family: Arial, sans-serif;
+
+      & :first-child {
+        font-size: 14px;
+        line-height: 130%;
+        color: white;
+      }
+
+      & :last-child {
+        font-size: 12px;
+        line-height: 130%;
+        color: #d2d4d8;
+      }
+    }
+  }
+
+  &__ratings {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 31px;
+    gap: 8px;
+
+    .ratings-text {
+      color: white;
+      font-weight: 700;
+      font-size: 12px;
+      display: flex;
+
+      gap: 8px;
+      font-family: Arial, sans-serif;
+
+      &__span {
+        color: #d2d4d8;
+        margin-right: 8px;
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+      }
+
+      &__pencil-icon {
+        background-image: url('../public/icons/icon-pencil.svg');
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+      }
+
+      &__thumbs-up-icon {
+        background-image: url('../public/icons/thumbs-up-icon.svg');
+        width: 12px;
+        cursor: pointer;
+        height: 12px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__actions {
+    .minimize {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-right: 24px;
+      margin-bottom: 24px;
+
+      &-line {
+        height: 1px;
+        width: 55%;
+        background-color: #69748c;
+      }
+
+      &-button {
+        display: flex;
+        cursor: pointer;
+        gap: 8px;
+        
+        border: none;
+        color: #69748c;
+        background-color: #2e2e54;
+
+        font-size: 14px;
+        font-weight: 400;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+
+        padding: 6px;
+        border-radius: 5px;
+        justify-content: center;
+
+        &__img {
+          height: 16px;
+          width: 16px;
+          background-image: url('../public/icons/chevron.svg');
+        }
+      }
+    }
+
+    .exit {
+      display: flex;
+      align-items: center;
+
+      gap: 12px;
+      color: #babcbf;
+      font-family: Arial, sans-serif;
+
+      font-weight: 400;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 200ms;
+
+      &:hover {
+        background-color: #bf2d71;
+      }
+
+      width: max-content;
+      padding: 5px;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+  }
+}

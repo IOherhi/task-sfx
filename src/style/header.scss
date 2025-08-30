@@ -1,0 +1,114 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 2px solid #a1a3a7;
+  background-color: white;
+  position: relative;
+  height: 54px;
+
+  z-index: 100;
+
+  padding-inline: 16px;
+  padding-block: 10px;
+
+  &-left {
+    display: flex;
+    align-items: center;
+
+    &__menu-button {
+      margin-right: 20px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+
+      will-change: transform;
+      transition: transform 200ms;
+
+      &:hover {
+        transform: scale(1.08);
+      }
+
+      @include on-tablet {
+        display: none;
+      }
+    }
+
+    &__create-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-inline: 12px;
+
+      margin-right: 45px;
+      background-color: #d13980;
+      color: white;
+
+      border-radius: 6;
+      cursor: pointer;
+      border: none;
+
+      height: 32px;
+      width: 82px;
+
+      will-change: transform;
+      transition: transform 200ms;
+
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+
+    &__logo {
+      cursor: pointer;
+    }
+  }
+
+  &-nav {
+    display: none;
+    width: 100%;
+
+    @include on-tablet {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #d13980;
+
+      font-weight: 700;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+
+      width: 70%;
+
+      @include on-desk-top {
+        width: 60%;
+        font-weight: 700;
+        font-size: 22px;
+      }
+
+      &-item {
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 3px;
+
+        will-change: transform;
+        transition: transform 200ms;
+
+        &:hover {
+          transform: scale(1.08);
+        }
+      }
+    }
+  }
+
+  &-right {
+    &__avatar {
+      cursor: pointer;
+    }
+  }
+}

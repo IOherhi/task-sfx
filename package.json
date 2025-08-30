@@ -1,0 +1,29 @@
+{
+  "name": "task-sfx",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://ioherhi.github.io/task-sfx",
+  "bugs": {
+    "url": "https://github.com/IOherhi/task-sfx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IOherhi/task-sfx.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " parcel src/index.html --open "
+  },
+  "dependencies": {
+    "prettier": "^3.6.2",
+    "stylelint": "^16.23.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "parcel": "^2.15.4",
+    "reset-css": "^5.0.2"
+  }
+}

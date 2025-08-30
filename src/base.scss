@@ -1,0 +1,20 @@
+@import 'reset-css';
+@import '../src/adaptive.scss';
+@import '../src/style/header.scss';
+@import '../src/style/menu-style/menu.scss';
+@import '../src/style/table-style/card.scss';
+@import '../src/style/table-style/tablet.scss';
+@import '../src/style/menu-style/menu-nav.scss';
+@import '../src/style/menu-style/menu-phone.scss';
+@import '../src/style/menu-style/menu-bottom.scss';
+
+
+html {
+  background-color: #1a1c3a;
+  overflow-y: hidden;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+}

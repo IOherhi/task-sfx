@@ -1,0 +1,137 @@
+.table {
+  width: 100%;
+  padding: 24px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  height: calc(100% - 55px);
+
+  &-options {
+    width: 328px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-self: center;
+    justify-content: space-between;
+
+    @include on-desk-top-993 {
+      width: 669px;
+    }
+
+    @include on-desk-top {
+      width: 100%;
+      justify-self: auto;
+    }
+
+    &__left {
+      &-h1 {
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        line-height: 130%;
+        font-family: Arial, Helvetica, sans-serif;
+
+        @include on-desk-top {
+          margin-bottom: 17px;
+          font-size: 24px;
+        }
+      }
+
+      &-list {
+        display: none;
+        gap: 24px;
+
+        @include on-desk-top {
+          display: flex;
+        }
+
+        &-item {
+          display: flex;
+          gap: 5px;
+          cursor: pointer;
+          align-items: center;
+
+          & :first-child {
+            color: #d13980;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 130%;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    &__right {
+      display: flex;
+      align-items: end;
+
+      &-sort-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 102px;
+        height: 32px;
+        background-color: #1a1c3a;
+        border: 1px solid #d13980;
+        color: #d13980;
+        border-radius: 6px;
+        gap: 8px;
+        cursor: pointer;
+
+        will-change: transform;
+        transition: transform 200ms;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        & :first-child {
+          width: 12px;
+          height: 12px;
+        }
+
+        @include on-desk-top {
+          display: none;
+        }
+      }
+
+      &-state-table {
+        display: flex;
+        gap: 16px;
+        & :nth-child(n) {
+          display: none;
+          cursor: pointer;
+
+          &:hover {
+            filter: blue;
+          }
+
+          @include on-desk-top {
+            display: inline;
+            box-sizing: border-box;
+
+            &:hover {
+              filter: invert(28%) sepia(57%) saturate(2192%) hue-rotate(303deg)
+                brightness(98%) contrast(87%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-list {
+    display: grid;
+
+    gap: 10px;
+    padding-bottom: 60px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 328px);
+
+    @include on-desk-top {
+      grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+    }
+  }
+
+  &-inner {
+    display: grid;
+  }
+}

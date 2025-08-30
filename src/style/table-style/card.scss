@@ -1,0 +1,248 @@
+.card {
+  height: max-content;
+  padding: 12px;
+  box-sizing: border-box;
+
+  border-radius: 6px;
+  background-color: white;
+
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    gap: 8px;
+
+    &-img {
+      cursor: pointer;
+      will-change: transform;
+      transition: transform 200ms;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    &-save-button {
+      display: none;
+    }
+
+    &-p {
+      display: flex;
+      align-items: center;
+
+      font-size: 14px;
+      color: #2e2e54;
+      font-weight: 700;
+      line-height: 130%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  &__rating {
+    margin-bottom: 24px;
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      color: #2e2e54;
+      font-family: Arial, Helvetica, sans-serif;
+
+      &-date {
+        display: flex;
+        height: 16px;
+        gap: 8;
+        align-items: end;
+        font-size: 12px;
+        & :first-child {
+          cursor: pointer;
+        }
+      }
+
+      &-stars {
+        display: flex;
+        height: 16px;
+        gap: 24;
+
+        & :last-child {
+          cursor: pointer;
+        }
+
+        &-left {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          font-size: 14px;
+
+          & :first-child {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &-p {
+      color: #2e2e54;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 130%;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  &__status {
+    margin-bottom: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      &-percent {
+        background-color: #d0893940;
+        padding-inline: 12px;
+        padding-block: 5px;
+        width: max-content;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 130%;
+        color: rgb(211, 140, 7);
+        border-radius: 50px;
+        margin-bottom: 3px;
+        font-family: 'Arial Narrow Bold', sans-serif;
+      }
+      &-started {
+        display: flex;
+        gap: 8px;
+        color: #2e2e54;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 130%;
+        font-family: Arial, Helvetica, sans-serif;
+
+        & :first-child {
+          color: #69748c;
+        }
+        & :last-child {
+          color: #2e2e54;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &-right {
+      width: max-content;
+      display: flex;
+      height: 24px;
+      align-items: center;
+      gap: 8px;
+      font-family: Arial, Helvetica, sans-serif;
+
+      &-p {
+        width: 108px;
+        font-size: 14px;
+        color: #2e2e54;
+        font-weight: 400;
+        line-height: 130%;
+
+        & :last-child {
+          font-size: 12px;
+          color: #69748c;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+
+    &-link {
+      width: 44px;
+      height: 44px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      background-color: #ffffff;
+      border: 1px solid #d2d4d8;
+      will-change: transform;
+      transition: transform 100ms;
+      box-sizing: border-box;
+
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      }
+
+      @include on-tablet {
+        height: 32px;
+      }
+    }
+
+    &-message {
+      width: 44px;
+      height: 44px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      background-color: #ffffff;
+      border: 1px solid #d2d4d8;
+      will-change: transform;
+      transition: transform 100ms;
+      box-sizing: border-box;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include on-tablet {
+        min-width: 174px;
+        height: 32px;
+      }
+
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      }
+
+      & :first-child {
+        display: flex;
+        height: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -2%;
+        gap: 8px;
+
+        & :last-child {
+          display: none;
+
+          @include on-tablet {
+            display: inline;
+          }
+        }
+      }
+    }
+
+    &-start {
+      width: 200px;
+      height: 44px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      background-color: #d13980;
+      box-sizing: border-box;
+
+      will-change: transform;
+      transition: transform 100ms;
+      font-size: 11px;
+
+      @include on-tablet {
+        height: 32px;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}

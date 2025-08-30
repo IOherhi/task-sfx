@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moderator account</title>
+    <link rel="stylesheet" href="../src/base.scss" />
+    <link rel="icon" href="../public/icons/favicon.png" />
+    <script defer src="../src/scripts/menuAnimation.js"></script>
+    <script defer src="../src/scripts/phoneMenu.js"></script>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <button class="header-left__menu-button">
+          <img src="../public/icons/menu-icon.png" alt="Icon-menu" />
+        </button>
+
+        <button class="header-left__create-button">
+          <img src="../public/icons/plus.svg" alt="plus" />
+          <p>Create</p>
+        </button>
+
+        <img
+          class="header-left__logo"
+          src="../public/images/logo.svg"
+          alt="Logo"
+        />
+      </div>
+
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__list-item">Home</li>
+          <li class="header-nav__list-item">Materials for Quiz</li>
+          <li class="header-nav__list-item">Feedback</li>
+        </ul>
+      </nav>
+
+      <div  class="header-right">
+        <img
+          class="header-right__avatar"
+          src="../public/images/avatar.svg"
+          alt="Avatar"
+        />
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="menu turn-off">
+        <img class="close-menu-button" src="../public/icons/close-icon.svg" alt="close-icon">
+
+        <nav class="menu-nav">
+          <ul class="menu-nav__list">
+            <li>
+              <a class="menu-nav__list-item" href="#">
+                <img src="../public/icons/quiz-icon.svg" alt="quiz" />
+                <p>My quizzes</p>
+              </a>
+            </li>
+
+            <li>
+              <a class="menu-nav__list-item" href="#">
+                <img src="../public/icons/verified-icon.svg" alt="completed" />
+                <p class="completed-text">Completed quizzes</p></a
+              >
+            </li>
+
+            <li>
+              <a class="menu-nav__list-item" href="#">
+                <img src="../public/icons/question.svg" alt="question" />
+                <p class="unmoderated-text">Unmoderated quizzes</p>
+              </a>
+            </li>
+
+            <li>
+              <a class="menu-nav__list-item manage-button" href="#">
+                <img src="../public/icons/folder-opened.svg" alt="folder" />
+                <p class="manage-text">Manage quiz folders</p>
+              </a>
+            </li>
+
+            <li>
+              <a class="menu-nav__list-item" href="#">
+                <img src="../public/icons/trash.svg" alt="trash" />
+                <p>Trash</p>
+              </a>
+            </li>
+       
+            <li class="profil-button">
+              <a class="menu-nav__list-item" href="#"
+                ><img src="../public/icons/user.svg" alt="user" />
+                <p>My profile</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu-bottom">
+          <div class="menu-bottom__user">
+            <img
+              class="menu-bottom__user-img"
+              src="../public/images/avatar.svg"
+              alt="user-img"
+            />
+
+            <div class="menu-bottom__user-info">
+              <p>User Name</p>
+              <p>Moderator</p>
+            </div>
+          </div>
+
+          <div class="menu-bottom__ratings">
+            <div class="ratings-text ratings-item">
+              <div class="ratings-text__pencil-icon"></div>
+              <p>
+                <span class="ratings-text__span">Author rating</span> 1190
+                points
+              </p>
+            </div>
+
+            <div class="ratings-text ratings-item">
+              <div class="ratings-text__thumbs-up-icon"></div>
+              <p>
+                <span class="ratings-text__span">User rating</span> 353 points,
+                31.87%
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-bottom__actions">
+            <div class="minimize">
+              <div class="minimize-line"></div>
+
+              <button class="minimize-button">
+                <div class="minimize-button__img"></div>
+                <p>Minimize</p>
+              </button>
+            </div>
+
+            <div class="exit">
+              <img src="../public/icons/exit-icon.svg" alt="exit-icon" />
+              <p>Exit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-phone">
+          <ul class="menu-phone__nav">
+            <li>
+              <a class="menu-phone__nav-item" href="#">
+                <img src="../public/icons/quiz-icon.svg" alt="quiz" />
+                <p>My quizzes</p>
+              </a>
+            </li>
+
+            <li>
+              <a class="menu-phone__nav-item" href="#">
+                <img src="../public/icons/verified-icon.svg" alt="completed" />
+                <p class="completed-text">Completed</p></a
+              >
+            </li>
+
+            <li>
+              <a class="menu-phone__nav-item" href="#">
+                <img src="../public/icons/question.svg" alt="question" />
+                <p class="unmoderated-text">Unmoderated</p>
+              </a>
+            </li>
+
+            <li>
+              <a class="menu-phone__nav-item" href="#">
+                <img src="../public/icons/folder-opened.svg" alt="folder" />
+                <p class="manage-text">Manage folders</p>
+              </a>
+            </li>
+         
+            <li>
+              <a class="menu-phone__nav-item" href="#">
+                <img src="../public/icons/more-horizontal.svg" alt="More" />
+                <p>More</p></a
+              >
+            </li>
+          </ul>
+      </div>
+
+      <section class="table">
+        <div class="table-inner">
+          <div class="table-options">
+            <div class="table-options__left">
+              <h1 class="table-options__left-h1">Unmoderated quizzes</h1>
+
+              <ul class="table-options__left-list">
+                <li class="table-options__left-list-item">
+                  <p>Quiz name</p>
+                  <img src="../public/icons/table-icons/chevron-up.svg" alt="ri">
+                </li>
+
+                  <li class="table-options__left-list-item">
+                  <p>Results and rating</p>
+                  <img src="../public/icons/table-icons/chevron-up.svg" alt="ri">
+                </li>
+
+                  <li class="table-options__left-list-item">
+                  <p>Created</p>
+                  <img src="../public/icons/table-icons/chevron-up.svg" alt="ri">
+                </li>
+
+                  <li class="table-options__left-list-item">
+                  <p>Category</p>
+                  <img src="../public/icons/table-icons/chevron-up.svg" alt="ri">
+                 </li>
+
+                 <li class="table-options__left-list-item">
+                  <p>Moderation status</p>
+                  <img src="../public/icons/table-icons/chevron-up.svg" alt="ri">
+                </li>
+
+                 <li class="table-options__left-list-item">
+                  <p>Moderation date</p>
+                  <img src="../public/icons/table-icons/chevron-up.svg" alt="ri">
+                </li>
+
+
+              </ul>
+
+
+            </div>
+
+            <div class="table-options__right">
+               <button class="table-options__right-sort-button">
+                <img src="../public/icons/dark-plus.svg" alt="plus-icon">
+                <p>Sorted by</p>
+              </button>
+
+              <div class="table-options__right-state-table">
+                <img src="../public/icons/table-icons/icon-list-table.svg" alt="button">
+                <img src="../public/icons/table-icons//icon-grid-table.svg" alt="button">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="table-list">
+
+            <article class="card">
+            <div class="card__name">
+              <img
+                src="../public/images/card-img.svg"
+                alt="img"
+                class="card__name-img"
+              />
+
+              <button class="card__name-save-button">
+                <img src="#" alt="save-button" />
+              </button>
+
+              <p class="card__name-p">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+              </p>
+            </div>
+
+            <div class="card__rating">
+              <div class="card__rating-top">
+                <div class="card__rating-top-date">
+                  <img src="../public/icons/card-icons/calendar-dates.svg" alt="calendar-dates">
+                  <p>31.01.2025</p>
+                </div>
+
+                <div class="card__rating-top-stars">
+                 <div class="card__rating-top-stars-left">
+                  <img src="../public/icons/card-icons/bar-chart.svg" alt="bar-chart">
+                  <p>6</p>
+                 </div>
+
+                 <img class="card__rating-top-stars-img" src="../public/images/starts-img.svg" alt="starts-img">
+
+                </div>
+              </div>
+
+              <p class="card__rating-p">History / Europe History / Ukraine</p>
+            </div>
+
+            <div class="card__status">
+              <div class="card__status-left">
+                <p class="card__status-left-percent">Moderate on 33%</p>
+                <div class="card__status-left-started">
+                  <p>Started</p>
+                  <p>31.01.2025</p>
+                </div>
+              </div>
+
+              <div class="card__status-right">
+                <img src="../public/images/Avatar-card.svg" alt='avatar' class="card__status-right-img" />
+                <p class="card__status-right-p">Moderator Name <span>Beginner Moderator</span></p>
+              </div>
+            </div>
+
+            <div class="card__buttons">
+              <button class="card__buttons-link">
+                  <img src="../public/icons/card-icons/link-icon.svg" alt="link-button" />
+              </button>
+
+              <button class="card__buttons-message">
+                <div>
+                  <img src="../public/icons/card-icons/message-icon.png" alt="message-button" />
+                  <p>Comments & rates</p>
+                </div>
+              </button>
+
+              <button class="card__buttons-start">Start moderation</button>
+            </div>
+            </article>
+
+             <article class="card">
+            <div class="card__name">
+              <img
+                src="../public/images/card-img.svg"
+                alt="img"
+                class="card__name-img"
+              />
+
+              <button class="card__name-save-button">
+                <img src="#" alt="save-button" />
+              </button>
+
+              <p class="card__name-p">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+              </p>
+            </div>
+
+            <div class="card__rating">
+              <div class="card__rating-top">
+                <div class="card__rating-top-date">
+                  <img src="../public/icons/card-icons/calendar-dates.svg" alt="calendar-dates">
+                  <p>31.01.2025</p>
+                </div>
+
+                <div class="card__rating-top-stars">
+                 <div class="card__rating-top-stars-left">
+                  <img src="../public/icons/card-icons/bar-chart.svg" alt="bar-chart">
+                  <p>6</p>
+                 </div>
+
+                 <img class="card__rating-top-stars-img" src="../public/images/starts-img.svg" alt="starts-img">
+
+                </div>
+              </div>
+
+              <p class="card__rating-p">History / Europe History / Ukraine</p>
+            </div>
+
+            <div class="card__status">
+              <div class="card__status-left">
+                <p class="card__status-left-percent">Moderate on 33%</p>
+                <div class="card__status-left-started">
+                  <p>Started</p>
+                  <p>31.01.2025</p>
+                </div>
+              </div>
+
+              <div class="card__status-right">
+                <img src="../public/images/Avatar-card.svg" alt="avatar-card" class="card__status-right-img" />
+                <p class="card__status-right-p">Moderator Name <span>Beginner Moderator</span></p>
+              </div>
+            </div>
+
+            <div class="card__buttons">
+              <button class="card__buttons-link">
+                  <img src="../public/icons/card-icons/link-icon.svg" alt="link-button" />
+              </button>
+
+              <button class="card__buttons-message">
+                <div>
+                  <img src="../public/icons/card-icons/message-icon.png" alt="message-button" />
+                  <p>Comments & rates</p>
+                </div>
+              </button>
+
+              <button class="card__buttons-start">Start moderation</button>
+            </div>
+            </article>
+
+            <article class="card">
+            <div class="card__name">
+              <img
+                src="../public/images/card-img.svg"
+                alt="img"
+                class="card__name-img"
+              />
+
+              <button class="card__name-save-button">
+                <img src="#" alt="save-button" />
+              </button>
+
+              <p class="card__name-p">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+              </p>
+            </div>
+
+            <div class="card__rating">
+              <div class="card__rating-top">
+                <div class="card__rating-top-date">
+                  <img src="../public/icons/card-icons/calendar-dates.svg" alt="calendar-dates">
+                  <p>31.01.2025</p>
+                </div>
+
+                <div class="card__rating-top-stars">
+                 <div class="card__rating-top-stars-left">
+                  <img src="../public/icons/card-icons/bar-chart.svg" alt="bar-chart">
+                  <p>6</p>
+                 </div>
+
+                 <img class="card__rating-top-stars-img" src="../public/images/starts-img.svg" alt="starts-img">
+
+                </div>
+              </div>
+
+              <p class="card__rating-p">History / Europe History / Ukraine</p>
+            </div>
+
+            <div class="card__status">
+              <div class="card__status-left">
+                <p class="card__status-left-percent">Moderate on 33%</p>
+                <div class="card__status-left-started">
+                  <p>Started</p>
+                  <p>31.01.2025</p>
+                </div>
+              </div>
+
+              <div class="card__status-right">
+                <img src="../public/images/Avatar-card.svg" alt="avatar-card" class="card__status-right-img" />
+                <p class="card__status-right-p">Moderator Name <span>Beginner Moderator</span></p>
+              </div>
+            </div>
+
+            <div class="card__buttons">
+              <button class="card__buttons-link">
+                  <img src="../public/icons/card-icons/link-icon.svg" alt="link-button" />
+              </button>
+
+              <button class="card__buttons-message">
+                <div>
+                  <img src="../public/icons/card-icons/message-icon.png" alt="message-button" />
+                  <p>Comments & rates</p>
+                </div>
+              </button>
+
+              <button class="card__buttons-start">Start moderation</button>
+            </div>
+            </article>
+
+             <article class="card">
+            <div class="card__name">
+              <img
+                src="../public/images/card-img.svg"
+                alt="img"
+                class="card__name-img"
+              />
+
+              <button class="card__name-save-button">
+                <img src="#" alt="save-button" />
+              </button>
+
+              <p class="card__name-p">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+              </p>
+            </div>
+
+            <div class="card__rating">
+              <div class="card__rating-top">
+                <div class="card__rating-top-date">
+                  <img src="../public/icons/card-icons/calendar-dates.svg" alt="calendar-dates">
+                  <p>31.01.2025</p>
+                </div>
+
+                <div class="card__rating-top-stars">
+                 <div class="card__rating-top-stars-left">
+                  <img src="../public/icons/card-icons/bar-chart.svg" alt="bar-chart">
+                  <p>6</p>
+                 </div>
+
+                 <img class="card__rating-top-stars-img" src="../public/images/starts-img.svg" alt="starts-img">
+
+                </div>
+              </div>
+
+              <p class="card__rating-p">History / Europe History / Ukraine</p>
+            </div>
+
+            <div class="card__status">
+              <div class="card__status-left">
+                <p class="card__status-left-percent">Moderate on 33%</p>
+                <div class="card__status-left-started">
+                  <p>Started</p>
+                  <p>31.01.2025</p>
+                </div>
+              </div>
+
+              <div class="card__status-right">
+                <img src="../public/images/Avatar-card.svg" alt="avatar-card" class="card__status-right-img" />
+                <p class="card__status-right-p">Moderator Name <span>Beginner Moderator</span></p>
+              </div>
+            </div>
+
+            <div class="card__buttons">
+              <button class="card__buttons-link">
+                  <img src="../public/icons/card-icons/link-icon.svg" alt="link-button" />
+              </button>
+
+              <button class="card__buttons-message">
+                <div>
+                  <img src="../public/icons/card-icons/message-icon.png" alt="message-button" />
+                  <p>Comments & rates</p>
+                </div>
+              </button>
+
+              <button class="card__buttons-start">Start moderation</button>
+            </div>
+            </article>
+
+            <article class="card">
+            <div class="card__name">
+              <img
+                src="../public/images/card-img.svg"
+                alt="img"
+                class="card__name-img"
+              />
+
+              <button class="card__name-save-button">
+                <img src="#" alt="save-button" />
+              </button>
+
+              <p class="card__name-p">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+              </p>
+            </div>
+
+            <div class="card__rating">
+              <div class="card__rating-top">
+                <div class="card__rating-top-date">
+                  <img src="../public/icons/card-icons/calendar-dates.svg" alt="calendar-dates">
+                  <p>31.01.2025</p>
+                </div>
+
+                <div class="card__rating-top-stars">
+                 <div class="card__rating-top-stars-left">
+                  <img src="../public/icons/card-icons/bar-chart.svg" alt="bar-chart">
+                  <p>6</p>
+                 </div>
+
+                 <img class="card__rating-top-stars-img" src="../public/images/starts-img.svg" alt="starts-img">
+
+                </div>
+              </div>
+
+              <p class="card__rating-p">History / Europe History / Ukraine</p>
+            </div>
+
+            <div class="card__status">
+              <div class="card__status-left">
+                <p class="card__status-left-percent">Moderate on 33%</p>
+                <div class="card__status-left-started">
+                  <p>Started</p>
+                  <p>31.01.2025</p>
+                </div>
+              </div>
+
+              <div class="card__status-right">
+                <img src="../public/images/Avatar-card.svg" alt="avatar" class="card__status-right-img" />
+                <p class="card__status-right-p">Moderator Name <span>Beginner Moderator</span></p>
+              </div>
+            </div>
+
+            <div class="card__buttons">
+              <button class="card__buttons-link">
+                  <img src="../public/icons/card-icons/link-icon.svg" alt="link-button" />
+              </button>
+
+              <button class="card__buttons-message">
+                <div>
+                  <img src="../public/icons/card-icons/message-icon.png" alt="message-button" />
+                  <p>Comments & rates</p>
+                </div>
+              </button>
+
+              <button class="card__buttons-start">Start moderation</button>
+            </div>
+            </article>
+
+             <article class="card">
+            <div class="card__name">
+              <img
+                src="../public/images/card-img.svg"
+                alt="img"
+                class="card__name-img"
+              />
+
+              <button class="card__name-save-button">
+                <img src="#" alt="save-button" />
+              </button>
+
+              <p class="card__name-p">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+              </p>
+
+              
+            </div>
+
+            <div class="card__rating">
+              <div class="card__rating-top">
+                <div class="card__rating-top-date">
+                  <img src="../public/icons/card-icons/calendar-dates.svg" alt="calendar-dates">
+                  <p>31.01.2025</p>
+                </div>
+
+                <div class="card__rating-top-stars">
+                 <div class="card__rating-top-stars-left">
+                  <img src="../public/icons/card-icons/bar-chart.svg" alt="bar-chart">
+                  <p>6</p>
+                 </div>
+
+                 <img class="card__rating-top-stars-img" src="../public/images/starts-img.svg" alt="starts-img">
+
+                </div>
+              </div>
+
+              <p class="card__rating-p">History / Europe History / Ukraine</p>
+            </div>
+
+            <div class="card__status">
+              <div class="card__status-left">
+                <p class="card__status-left-percent">Moderate on 33%</p>
+                <div class="card__status-left-started">
+                  <p>Started</p>
+                  <p>31.01.2025</p>
+                </div>
+              </div>
+
+              <div class="card__status-right">
+                <img src="../public/images/Avatar-card.svg" alt="avatar-card" class="card__status-right-img" />
+                <p class="card__status-right-p">Moderator Name <span>Beginner Moderator</span></p>
+              </div>
+            </div>
+
+            <div class="card__buttons">
+              <button class="card__buttons-link">
+                  <img src="../public/icons/card-icons/link-icon.svg" alt="link-button" />
+              </button>
+
+              <button class="card__buttons-message">
+                <div>
+                  <img src="../public/icons/card-icons/message-icon.png" alt="message-button" />
+                  <p>Comments & rates</p>
+                </div>
+              </button>
+
+              <button class="card__buttons-start">Start moderation</button>
+            </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+  </body>
+</html>
