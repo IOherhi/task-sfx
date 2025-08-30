@@ -16,7 +16,7 @@ const turnOff = document.querySelector('.turn-off');
     exitButton.lastElementChild.style.display = 'block';
     setTimeout(()=>{
         minimizeLine.style.position = 'relative';
-        minimizeLine.style.opacity = '1';
+        minimizeLine.style.display = 'inline';
     }, 100);
     setTimeout(()=>{
         minimizeButton.lastElementChild.style.display = 'inline';
@@ -49,7 +49,7 @@ function collapseMenu() {
     minimizeButton.firstElementChild.classList.add('minimize-img-right');
     exitButton.lastElementChild.classList.add('fade-out');
     minimizeLine.style.position = 'absolute';
-    minimizeLine.style.opacity = '0';
+    minimizeLine.style.display = 'none';
     menuBottom.style.marginLeft = '10px';
     menu.style.minWidth = '0';
     menu.style.width = '56px';
