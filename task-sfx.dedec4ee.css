@@ -220,7 +220,7 @@ table {
 }
 
 .minimize-img-right {
-  background-image: url("chevron-right.27e38d8a.svg") !important;
+  background-image: url("chevron-right.0ebc1358.svg") !important;
 }
 
 .menu-move {
@@ -895,7 +895,7 @@ table {
 
 .menu-bottom__ratings .ratings-text__pencil-icon {
   cursor: pointer;
-  background-image: url("icon-pencil.fa2d3f87.svg");
+  background-image: url("icon-pencil.ab0ec3f9.svg");
   background-repeat: no-repeat;
   width: 12px;
   height: 12px;
@@ -903,7 +903,7 @@ table {
 
 .menu-bottom__ratings .ratings-text__thumbs-up-icon {
   cursor: pointer;
-  background-image: url("thumbs-up-icon.1306dd18.svg");
+  background-image: url("thumbs-up-icon.f8f86990.svg");
   background-repeat: no-repeat;
   width: 12px;
   height: 12px;
@@ -940,7 +940,7 @@ table {
 }
 
 .menu-bottom__actions .minimize-button__img {
-  background-image: url("chevron.6c2298b1.svg");
+  background-image: url("chevron.dad6c700.svg");
   width: 16px;
   height: 16px;
 }
